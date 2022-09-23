@@ -12,6 +12,6 @@ class MyPlaceController extends Controller
     }
     public function clip()
     {
-        return "aaaaaaaaaaaaaaa";
+        return "Welcome";
     }
 }
