@@ -17,6 +17,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/page', 'MyPlaceController@index');
+Route::get('/page', 'PostController@index');
 
 Route::get('/place', 'MyPlaceController@clip');
+
+Route::get('/post/create', 'PostController@create');
+Route::get('/post/update', 'PostController@update');
+Route::get('/post/delete', 'PostController@delete');
+
+Route::get('/user/{id}/{name}', function($id, $name) {
+    return 'Id: '.$id.' User: '.$name;
+});
