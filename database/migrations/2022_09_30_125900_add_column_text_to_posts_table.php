@@ -14,7 +14,7 @@ class AddColumnTextToPostsTable extends Migration
     public function up()
     {
         Schema::table('posts', function (Blueprint $table) {
-            $table->text('text')->nullable();
+            $table->text('text')->nullable()->after('description');
         });
     }
 
